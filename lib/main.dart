@@ -8,12 +8,19 @@ class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return const MaterialApp(
+    return MaterialApp(
         home: Scaffold(
             backgroundColor: Colors.red,
-            body: Center(
-              child: Text('Hello world'),
-            )
+            body: SafeArea(
+              child: Container(
+                height: 100,
+                width: 100,
+                color: Colors.white,
+                margin: const EdgeInsets.all(30),
+                padding: const EdgeInsets.all(20),
+                child: const Text('Hello world'),
+              ),
+            ),
         )
     );
   }
