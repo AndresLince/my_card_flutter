@@ -15,9 +15,15 @@ class MyApp extends StatelessWidget {
         child: Column(
           children: [
             CircleAvatar(
+              backgroundColor: Colors.white,
               radius: 50,
               backgroundImage: AssetImage('images/profile_image.png'),
-            )
+            ),
+            Text('Andres Lince',style: TextStyle(
+              fontSize: 20,
+              color: Colors.white,
+              fontWeight: FontWeight.bold
+            ),)
           ],
         ),
       ),
