@@ -35,6 +35,16 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2.5,
                   fontFamily: 'SourceSans',
                   fontWeight: FontWeight.bold),
+            ),
+            Container(
+              child: const Row(
+                children: [
+                  Icon(
+                      Icons.phone,
+                    color: Colors.white
+                  )
+                ],
+              ),
             )
           ],
         ),
