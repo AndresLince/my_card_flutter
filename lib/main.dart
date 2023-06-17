@@ -37,9 +37,12 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold),
             ),
             Container(
+              color: Colors.white,
+              padding: const EdgeInsets.all(10),
+              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
               child: Row(
                 children: [
-                  const Icon(Icons.phone, color: Colors.white),
+                  const Icon(Icons.phone, color: Colors.teal),
                   const SizedBox(
                     width: 10,
                   ),
