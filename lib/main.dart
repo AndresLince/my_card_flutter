@@ -37,11 +37,16 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold),
             ),
             Container(
-              child: const Row(
+              child: Row(
                 children: [
-                  Icon(
-                      Icons.phone,
-                    color: Colors.white
+                  const Icon(Icons.phone, color: Colors.white),
+                  Text('+57 3103926823',
+                    style: TextStyle(
+                      fontFamily: 'SourceSans',
+                      color: Colors.teal.shade900,
+                      fontSize:20,
+                      fontWeight: FontWeight.bold
+                    ),
                   )
                 ],
               ),
