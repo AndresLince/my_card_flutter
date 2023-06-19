@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
       backgroundColor: Colors.teal,
       body: SafeArea(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const CircleAvatar(
               backgroundColor: Colors.white,
