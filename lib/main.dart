@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
               color: Colors.white,
               margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
               child: ListTile(
-                leading: Icon(Icons.phone, color: Colors.teal),
+                leading: const Icon(Icons.phone, color: Colors.teal),
                 title: Text(
                   '+57 3103926823',
                   style: TextStyle(
@@ -51,27 +51,21 @@ class MyApp extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              color: Colors.white,
-              padding: const EdgeInsets.all(10),
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-              child: Row(
-                children: [
-                  const Icon(Icons.email, color: Colors.teal),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  Text(
+            Card(
+                color: Colors.white,
+                margin:
+                    const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: const Icon(Icons.email, color: Colors.teal),
+                  title: Text(
                     'lince@email.com',
                     style: TextStyle(
                         fontFamily: 'SourceSans',
                         color: Colors.teal.shade900,
                         fontSize: 20,
                         fontWeight: FontWeight.bold),
-                  )
-                ],
-              ),
-            )
+                  ),
+                ))
           ],
         ),
       ),
