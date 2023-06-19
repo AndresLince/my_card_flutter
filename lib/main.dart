@@ -37,7 +37,6 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold),
             ),
             Card(
-              color: Colors.white,
               margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
               child: ListTile(
                 leading: const Icon(Icons.phone, color: Colors.teal),
@@ -52,7 +51,6 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Card(
-                color: Colors.white,
                 margin:
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
                 child: ListTile(
