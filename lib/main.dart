@@ -36,25 +36,19 @@ class MyApp extends StatelessWidget {
                   fontFamily: 'SourceSans',
                   fontWeight: FontWeight.bold),
             ),
-            Container(
+            Card(
               color: Colors.white,
-              padding: const EdgeInsets.all(10),
               margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-              child: Row(
-                children: [
-                  const Icon(Icons.phone, color: Colors.teal),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  Text(
-                    '+57 3103926823',
-                    style: TextStyle(
-                        fontFamily: 'SourceSans',
-                        color: Colors.teal.shade900,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold),
-                  )
-                ],
+              child: ListTile(
+                leading: Icon(Icons.phone, color: Colors.teal),
+                title: Text(
+                  '+57 3103926823',
+                  style: TextStyle(
+                      fontFamily: 'SourceSans',
+                      color: Colors.teal.shade900,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold),
+                ),
               ),
             ),
             Container(
